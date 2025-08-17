@@ -1,0 +1,58 @@
+# Podcast Configuration for VoiceCast AI
+# This file contains default settings for podcast generation
+
+podcast:
+  name: "VoiceCast AI Podcast"
+  author: "Your Name"
+  description: "AI-generated podcasts from blog posts"
+  category: "Technology"
+  language: "en"
+
+conversation:
+  # Conversation style: casual, formal, humorous, educational
+  default_style: "casual"
+  
+  # Creativity level (0.0 to 1.0)
+  creativity: 0.7
+  
+  # Number of chunks for content processing
+  max_chunks_standard: 5
+  max_chunks_longform: 10
+  
+  # Custom prompts for different content types
+  prompts:
+    tech: "Create an engaging tech podcast discussing the key points with enthusiasm"
+    business: "Create a professional business podcast with actionable insights"
+    personal: "Create a warm, conversational podcast with personal stories and examples"
+
+tts:
+  # Default TTS model (openai or elevenlabs)
+  default_model: "openai"
+  
+  # OpenAI voice options: alloy, echo, fable, onyx, nova, shimmer
+  openai_voice: "alloy"
+  openai_speed: 1.0
+  
+  # ElevenLabs voice options (if you have API key)
+  elevenlabs_voice: "Rachel"
+  elevenlabs_stability: 0.5
+  elevenlabs_similarity: 0.75
+
+audio:
+  # Background music settings
+  enable_music: false
+  music_volume: 0.1
+  
+  # Audio quality
+  bitrate: "128k"
+  sample_rate: 44100
+
+output:
+  # Output format
+  format: "mp3"
+  
+  # File naming pattern
+  filename_pattern: "podcast_{timestamp}"
+  
+  # Keep intermediate files
+  keep_temp_files: false
