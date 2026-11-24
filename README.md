@@ -21,7 +21,7 @@ VoiceCast AI is a local podcast generation tool that converts blog posts and art
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/voicecast-ai.git
+git clone https://github.com/Sdefendre/voicecast-ai.git
 cd voicecast-ai
 ```
 
